@@ -8,7 +8,7 @@
 	div {
 		position: relative;
 		left: 8.3em;
-	 }
+	 }	
 </style>
 </head>
 <body>
@@ -27,7 +27,7 @@
 		</div>
         
         <label>お問い合わせ内容</label>
-        <textarea th:field="*{textItem}"></textarea><br>
+        <textarea th:field="*{textItem}" cols="30" rows="10"></textarea><br>
         <div th:if="${#fields.hasErrors('textItem')}" th:errors="*{textItem}" style="color: red;">
 			
 		</div>
